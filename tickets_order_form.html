@@ -42,30 +42,82 @@
 				<fieldset>
 				<legend>Member Information</legend>
 				
-				<p><label>E-mail: </label><input type="text" name="fname" size="25" /></p>
-				<p><label>First Name: </label><input type="text" name="femail" size="25" /></p>
-				<p><label>Last Name: </label><input type="text" name="fdireccion" size="25" /></p>
-				<p><label>Address: </label><input type="text" name="fname" size="25" /></p>
-				<p><label>city: </label><input type="text" name="femail" size="25" /></p>
-				<p><label>Province: </label><input type="text" name="fdireccion" size="25" /></p>	
-				<p><label>Postal Code: </label><input type="text" name="fname" size="25" /></p>
-				<p><label>Phone Number: </label><input type="text" name="femail" size="25" /></p>				
+				<label>E-mail: </label><input type="text" name="mail" size="25" /><br>
+				<label>First Name: </label><input type="text" name="first" size="25" /><br>
+				<label>Last Name: </label><input type="text" name="last" size="25" /><br>
+				<label>Address: </label><input type="text" name="address" size="25" /><br>
+				<label>city: </label><input type="text" name="city" size="25" /><br>
+				<label>Province: </label><input type="text" name="province" size="25" /><br>	
+				<label>Postal Code: </label><input type="text" name="postal" size="25" /><br>
+				<label>Phone Number: </label><input type="text" name="phone" size="25" /><br>			
 				</fieldset>
 				
 				<fieldset>
 				<legend>Ordering Information</legend>
+				<label>Event: </label><select name="lista_de_seleccion">
+				<option value="Cookie Decoration Contest">Cookie Decoration Contest</option>
+				<option value="Tree Decoration Contest">Tree Decoration Contest</option>
+				<option value="Gift of Light Ride-Along">Gift of Light Ride-Along</option>
+				<option value="Breakfast with Santa">Breakfast with Santa</option>
+				</select>
+				<br>
+				<label>Order Type: </label><select name="lista_de_seleccion1">
+				<option value="Member Package">Member Package</option>
+				<option value="Donor Package">Donor Package</option>
+				<option value="Single Tickets">Single Tickets</option>
+				</select>
+				<br>
+				<label>Number of tickets: </label><input type="text" name="ntickets" size="25" />
 				</fieldset>
+				
 				
 				<fieldset>
 				<legend>Payment Method</legend>
+				
+				<input type="radio" id="billme" name="payment" value="billme">Bill Me
+                <input type="radio" id="creditcard" name="payment" value="creditcard">Credit Card
 				</fieldset>
+				
 				
 				<fieldset>
 				<legend>Credit card Information</legend>
+				<label>Card Type: </label><select name="lista_de_seleccion">
+				<option value="Visa">Visa</option>
+				<option value="Master Card">Master Card</option>
+				<option value="Discover">Discover</option>
+				</select>
+				<br>
+				<label>Card Number: </label><input type="text" name="cardn" size="25" />
+				<br>
+				<label>Expiration Date: </label><select name="lista_de_seleccion1">
+				<option value="January">January</option>
+				<option value="February">February</option>
+				<option value="March">March</option>
+				<option value="April">April</option>
+				<option value="March">March</option>
+				<option value="June">June</option>
+				<option value="July">July</option>
+				<option value="August">August</option>
+				<option value="September">September</option>
+				<option value="October">October</option>
+				<option value="November">November</option>
+				<option value="December">December</option>
+				</select>
+				<select name="lista_de_seleccion2">
+				<option value="2021">2021</option>
+				<option value="2022">2022</option>
+				<option value="2023">2023</option>
+				<option value="2024">2024</option>
+				<option value="2025">2025</option>
+				<option value="2026">2026</option>
+				<option value="2027">2027</option>
+				</select>
 				</fieldset>
 				
 				<fieldset>
 				<legend>Submit Your Order</legend>
+				<input type="submit" value="Submit">
+				<input type="Reset" value="Reset Fields">
 				</fieldset>
 				
 				</form>
