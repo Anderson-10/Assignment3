@@ -171,7 +171,96 @@ main ul#product-categories img {
 	color: #d1a215;	
 	font-weight: bold;
 }
+/* Form */
+form{
+       margin: 0 2px;
+	   padding: 0.35em 0.625em 0.75em;
+	 
+	      
+    }	
+form legend{
+       color: gray;
+	   font-weight: bold;
+	   font-size: 85%;
+	    }
+form label{
+	font-size:90%;
+	text-align:right;
+	float: left;
+    width: 12em;
+	}
+	
+form select{
+	font-size:90%;
+	display:right;
+	margin-bottom: 10px;
+	}
+	
+fieldset {
+    display: block;
+    padding-block-start: 25px;
+    padding-inline-start: 25px;
+    padding-inline-end: 25px;
+    padding-block-end: 25px;
+    border-width: 1px;
+    border-style: groove;
+    border-color: grey;
+    border-image: initial;
+}
+			
+form input{
+	font-size:90%;
+	display:right;
+	margin-bottom: 10px;
+	width:40%;
+	}
+	
+input, select {
+    width: 15em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+	
+form input#first{
+	border-color:orange;
+	border-style:solid;
+	border-width:2px;
+}
+form input#last{
+	border-color:orange;
+	border-style:solid;
+	border-width:3px;
+}
+form input#city{
+	border-color:orange;
+	border-style:solid;
+	border-width:3px;
+}
+form input#province{
+	border-color:orange;
+	border-style:solid;
+	border-width:3px;
+}
+form input#postal{
+	border-color:orange;
+	border-style:solid;
+	border-width:3px;
+}
+form input#cardn{
+	border-color:orange;
+	border-style:solid;
+	border-width:3px;
+}
+fieldset#buttons {
+    margin-top: 1em;
+	
+}
 
+#buttons input{
+    width: 10em;
+	
+}
+	
 /* Footer */
 footer {
 	clear: left;
