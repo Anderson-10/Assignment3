@@ -178,127 +178,140 @@ form{
 	 
 	      
     }	
+	/*Color, bold and font settings of the legend label. */
 form legend{
        color: gray;
 	   font-weight: bold;
 	   font-size: 85%;
 	    }
+	/*Color configuration, location and width of the label label in the form. */
 form label{
 	font-size:90%;
 	text-align:right;
 	float: left;
     width: 12em;
 	}
-	
+	/*Configuration of the select label where letter, location and bottom margin are configured */ 
 form select{
 	font-size:90%;
 	display:right;
 	margin-bottom: 10px;
 	}
-	
+	/*Configuration of the fieldset label, the boxes where the information is divided, the block view, the border distances, the margin, the color and the style are configured*/
 fieldset {
     display: block;
     padding-block-start: 25px;
-    padding-inline-start: 25px;
-    padding-inline-end: 25px;
-    padding-block-end: 25px;
+	margin:15px;
     border-width: 1px;
-    border-style: groove;
+    border-style: solid;
     border-color: grey;
     border-image: initial;
 }
-			
+/* configuration of the input image where the margin, width and font size are configured.*/			
 form input{
 	font-size:90%;
 	display:right;
 	margin-bottom: 10px;
 	width:15em;
 	}
-	
+	/*Margins configuration on the select the margins and the distance from the other label.*/
 input, select {
     width: 15em;
     margin-left: 0.5em;
     margin-bottom: 0.5em;
 }
+/*Border, color and style settings on the email label. */
 form input#email{
 	border-color:black;
 	border-style:solid;
 	border-width:1px;
 }	
+/*Border, color and style settings on the First Name label. */
 form input#first{
 	border-color:orange;
 	border-style:solid;
 	border-width:2px;
 }
+/*Border, color and style settings on the Last Name label. */
 form input#last{
 	border-color:orange;
 	border-style:solid;
 	border-width:2px;
 }
+/*Border, color and style settings on the address label. */
 form input#address{
 	border-color:black;
 	border-style:solid;
 border-width:1px;
 }
+/*Border, color and style settings on the City label. */
 form input#city{
 	border-color:orange;
 	border-style:solid;
 	border-width:2px;
 }
+/*Border, color and style settings on the province label. */
 form input#province{
 	border-color:orange;
 	border-style:solid;
 	border-width:2px;
 }
+/*Border, color and style settings on the postal code label. */
 form input#postal{
 	border-color:orange;
 	border-style:solid;
 	border-width:2px;
 }
+/*Border, color and style settings on the card number label. */
 form input#cardn{
 	border-color:orange;
 	border-style:solid;
 	border-width:2px;
 }
+/*Field to delete the previous fieldset configuration and reconfigure the radio button margin. */
 fieldset#buttons {
-    margin-top: 1em;
-	
+    margin-top: 1em;	
 }
+/*Setting the radio button location."billme" */
 input#billme {
 	float: left;
 }
+/*Setting the radio button location."creditcard" */
 input#creditcard {
 	float: left;
 }
+/*Setting the font location for the radio button label 1, font configuration, width and alignment of the label.*/
 label#billme{
 	    font-size: 90%;
     text-align: right;
 	float: left;
     width: 4em;
 }
+/*Setting the font location for the radio button label 2, font configuration, width and alignment of the label.*/
 label#creditcard {
 	font-size: 90%;
     text-align: right;
 	float: left;
     width: 6em;
 }
-
+/*Configuration of the input type of the radio button with respect to the location of the margin and the width of the range.*/
 input[type="radio"] {
     width: auto;
     margin-left: 50px;
 }
-
+/*width for the Card Number field*/
 input#cardn{
 	width: 15em;
 }
-
+/*First list box field width configuration*/
 select#mes{
 	width: 7em;
 }
+/*Second list box field width configuration*/
 select#year{
 	width: 5em;
 }
-
+/*Field width configuration for the send and reset buttons.*/
 #buttons input{
     width: 10em;
 	
