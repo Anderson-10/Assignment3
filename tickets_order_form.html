@@ -38,7 +38,7 @@
 			<main>
 				<h1>Order Event Tickets</h1>
 				<!-- The form starts here... -->
-				<form action="" method="post" name="order_form" id="place_order.html" novalidate>
+				<form action="place_order.html" method="post" name="order_form" >
 				<fieldset>
 				<legend>Member Information</legend>
 				
@@ -74,8 +74,8 @@
 				<fieldset>
 				<legend>Payment Method</legend>
 				
-				<input type="radio" id="billme" name="payment" value="billme">Bill Me
-                <input type="radio" id="creditcard" name="payment" value="creditcard">Credit Card
+				<input type="radio" id="billme" name="payment" value="billme"><label for= "billme" id = "billme">Bill Me</label>
+                <input type="radio" id="creditcard" name="payment" value="creditcard"><label for= "creditcard" id = "creditcard">Credit Card</label>
 				</fieldset>
 				
 				
@@ -89,7 +89,7 @@
 				<br>
 				<label>Card Number: </label><input type="text" name="cardn" id="cardn" "Must be 16 numeric characters long" pattern="[0-9]+" placeholder= "16 digits" minlength="16"maxlength="16" required>
 				<br>
-				<label>Expiration Date: </label><select name="lista_de_seleccion1">
+				<label>Expiration Date: </label><select name="lista_de_seleccion1" id="mes">
 				<option value="January">January</option>
 				<option value="February">February</option>
 				<option value="March">March</option>
@@ -103,7 +103,7 @@
 				<option value="November">November</option>
 				<option value="December">December</option>
 				</select>
-				<select name="lista_de_seleccion2">
+				<select name="lista_de_seleccion2" id="year">
 				<option value="2021">2021</option>
 				<option value="2022">2022</option>
 				<option value="2023">2023</option>
@@ -115,9 +115,10 @@
 				</fieldset>
 				
 				<fieldset id="buttons">
-				<legend>Submit Your Order</legend>
-				<input type="Submit" name="Submit" value="Submit">
-				<input type="Reset" name="Reset" value="Reset Fields">
+					<legend>Submit Your Data</legend>
+					<label>&nbsp;</label>
+					<input type="submit" id="submit" value="Submit">
+					<input type="reset" id="reset" value="Reset Fields">
 				</fieldset>
 				
 				</form>
